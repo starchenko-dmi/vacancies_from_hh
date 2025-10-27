@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional, Union, List, Dict
 
 class Vacancy:
     """Класс для представления вакансии."""
@@ -16,8 +16,8 @@ class Vacancy:
     ):
         self.title = self._validate_str(title, "Название вакансии")
         self.url = self._validate_url(url)
-        self.salary_from = salary_from if salary_from is not None else 0
-        self.salary_to = salary_to if salary_to is not None else 0
+        self.salary_from = salary_from  # может быть None
+        self.salary_to = salary_to      # может быть None
         self.currency = currency if currency else "RUR"
         self.description = description or ""
 
@@ -36,10 +36,27 @@ class Vacancy:
 
     @property
     def salary_avg(self) -> int:
-        """Средняя зарплата (для сравнения)."""
-        if self.salary_from and self.salary_to:
-            return (self.salary_from + self.salary_to) // 2
-        return self.salary_from or self.salary_to or 0
+        """Средняя зарплата (для сравнения и сортировки)."""
+        from_val = self.salary_from or 0
+        to_val = self.salary_to or 0
+        if from_val and to_val:
+            return (from_val + to_val) // 2
+        return from_val or to_val
+
+    def get_salary_str(self) -> str:
+        """Возвращает представление зарплаты."""
+        from_val = self.salary_from
+        to_val = self.salary_to
+        curr = self.currency or "RUR"
+
+        if from_val is not None and to_val is not None:
+            return f"от {from_val} до {to_val} {curr}"
+        elif from_val is not None:
+            return f"от {from_val} {curr}"
+        elif to_val is not None:
+            return f"до {to_val} {curr}"
+        else:
+            return "зарплата не указана"
 
     def __lt__(self, other):
         if not isinstance(other, Vacancy):
@@ -90,7 +107,7 @@ class Vacancy:
         )
 
     @classmethod
-    def cast_to_object_list(cls, vacancies_data: list[dict]) -> list["Vacancy"]:
+    def cast_to_object_list(cls, vacancies_data: List[Dict]) -> List["Vacancy"]:
         """Преобразует список словарей от API в список объектов Vacancy."""
         vacancies = []
         for item in vacancies_data:
@@ -105,7 +122,7 @@ class Vacancy:
                     description=item.get("snippet", {}).get("requirement", "")
                 )
                 vacancies.append(vacancy)
-            except (KeyError, ValueError) as e:
+            except (KeyError, ValueError):
                 # Пропускаем некорректные вакансии
                 continue
         return vacancies
