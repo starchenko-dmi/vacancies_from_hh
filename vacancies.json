@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Python-разработчик",
+    "url": "https://hh.ru/vacancy/126967394",
+    "salary_from": 0,
+    "salary_to": 600000,
+    "currency": "RUR",
+    "description": "6+ лет разработки и опыта с Linux. Опыт проектирования архитектуры и работы с SQL/NoSQL. Опыт с хранилищами данных..."
+  },
+  {
+    "title": "Frontend-разработчик typescript",
+    "url": "https://hh.ru/vacancy/126896019",
+    "salary_from": 350000,
+    "salary_to": 0,
+    "currency": "RUR",
+    "description": "Опыт работы от 6 лет в разработке фронтенд-приложений. Отличное знание HTML, CSS и JavaScript. Опыт работы с современными фреймворками. "
+  },
+  {
+    "title": "Ведущий инженер-тестировщик отдела разработки, тестирования и конфигурирования ИИ",
+    "url": "https://hh.ru/vacancy/126965623",
+    "salary_from": 0,
+    "salary_to": 310000,
+    "currency": "RUR",
+    "description": "Понимание специфики тестирования моделей машинного обучения и работы с данными. Владение <highlighttext>Python</highlighttext> и инструментами автоматизации тестирования. Знание принципов MLOps, методов..."
+  },
+  {
+    "title": "Ведущий Backend-разработчик",
+    "url": "https://hh.ru/vacancy/127025644",
+    "salary_from": 250000,
+    "salary_to": 350000,
+    "currency": "RUR",
+    "description": "Понимание и практический опыт реализации паттернов для высоконагруженных систем. Опыт настройки продюсеров, консьюмеров, параметры подключения - Kafka. Уверенное владение SQL, GraphQL..."
+  },
+  {
+    "title": "Backend-разработчик",
+    "url": "https://hh.ru/vacancy/127015551",
+    "salary_from": 0,
+    "salary_to": 300000,
+    "currency": "RUR",
+    "description": "Опыт от 3 лет. Опыт от 3 лет. Symfony/1C-Битрикс. Опыт от 3 лет."
+  },
+  {
+    "title": "Разработчик программ",
+    "url": "https://hh.ru/vacancy/126975985",
+    "salary_from": 350000,
+    "salary_to": 350000,
+    "currency": "RUR",
+    "description": "Владение одним или несколькими языками высокого уровня программирования (например, C#, Java, <highlighttext>Python</highlighttext>). * Опыт работы с системами контроля версий (Git). * "
+  },
+  {
+    "title": "Python - разработчик",
+    "url": "https://hh.ru/vacancy/127019180",
+    "salary_from": 270000,
+    "salary_to": 300000,
+    "currency": "RUR",
+    "description": "Минимум 5 лет коммерческого опыта на <highlighttext>Python</highlighttext>/FastAPI. Опыт в фин. тех проектах. Практическое знание построения REST API (CRUD, View). "
+  },
+  {
+    "title": "Python-разработчик",
+    "url": "https://hh.ru/vacancy/126851565",
+    "salary_from": 260000,
+    "salary_to": null,
+    "currency": "RUR",
+    "description": "Высшее/неполное высшее профильное образование. Опыт разработки на <highlighttext>Python</highlighttext> 3.X. Понимание механики языка <highlighttext>Python</highlighttext> и сопутствующих инструментов (pytest, mypy..."
+  },
+  {
+    "title": "Python-разработчик",
+    "url": "https://hh.ru/vacancy/126665362",
+    "salary_from": 250000,
+    "salary_to": null,
+    "currency": "RUR",
+    "description": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 2–3 лет, с акцентом на backendразработку. Глубокие знания асинхронного программирования (asyncio, aiohttp) и..."
+  },
+  {
+    "title": "Middle Backend Разработчик (Python)",
+    "url": "https://hh.ru/vacancy/127009263",
+    "salary_from": 220000,
+    "salary_to": 250000,
+    "currency": "RUR",
+    "description": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 3 лет. Опыт проектирования, разработки и внедрения серверных приложений. Понимание устройства основных сетевых протоколов..."
+  }
+]
